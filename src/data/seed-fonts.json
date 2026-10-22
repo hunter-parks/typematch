@@ -1,0 +1,328 @@
+{
+  "version": 1,
+  "updatedAt": "2026-10-22T05:23:06.276Z",
+  "fonts": [
+    {
+      "family": "DM Sans",
+      "category": "sans-serif",
+      "variants": [
+        {
+          "weight": 100,
+          "style": "italic"
+        },
+        {
+          "weight": 100,
+          "style": "normal"
+        },
+        {
+          "weight": 200,
+          "style": "italic"
+        },
+        {
+          "weight": 200,
+          "style": "normal"
+        },
+        {
+          "weight": 300,
+          "style": "italic"
+        },
+        {
+          "weight": 300,
+          "style": "normal"
+        },
+        {
+          "weight": 400,
+          "style": "italic"
+        },
+        {
+          "weight": 400,
+          "style": "normal"
+        },
+        {
+          "weight": 500,
+          "style": "italic"
+        },
+        {
+          "weight": 500,
+          "style": "normal"
+        },
+        {
+          "weight": 600,
+          "style": "italic"
+        },
+        {
+          "weight": 600,
+          "style": "normal"
+        },
+        {
+          "weight": 700,
+          "style": "italic"
+        },
+        {
+          "weight": 700,
+          "style": "normal"
+        },
+        {
+          "weight": 800,
+          "style": "italic"
+        },
+        {
+          "weight": 800,
+          "style": "normal"
+        },
+        {
+          "weight": 900,
+          "style": "italic"
+        },
+        {
+          "weight": 900,
+          "style": "normal"
+        },
+        {
+          "weight": 1000,
+          "style": "italic"
+        },
+        {
+          "weight": 1000,
+          "style": "normal"
+        }
+      ],
+      "axes": [
+        {
+          "tag": "opsz",
+          "min": 9,
+          "max": 40,
+          "default": 14
+        },
+        {
+          "tag": "wght",
+          "min": 100,
+          "max": 1000,
+          "default": 400
+        }
+      ],
+      "subsets": [
+        "latin",
+        "latin-ext"
+      ],
+      "primaryScript": "",
+      "display": false
+    },
+    {
+      "family": "Lora",
+      "category": "serif",
+      "variants": [
+        {
+          "weight": 400,
+          "style": "italic"
+        },
+        {
+          "weight": 400,
+          "style": "normal"
+        },
+        {
+          "weight": 500,
+          "style": "italic"
+        },
+        {
+          "weight": 500,
+          "style": "normal"
+        },
+        {
+          "weight": 600,
+          "style": "italic"
+        },
+        {
+          "weight": 600,
+          "style": "normal"
+        },
+        {
+          "weight": 700,
+          "style": "italic"
+        },
+        {
+          "weight": 700,
+          "style": "normal"
+        }
+      ],
+      "axes": [
+        {
+          "tag": "wght",
+          "min": 400,
+          "max": 700,
+          "default": 400
+        }
+      ],
+      "subsets": [
+        "cyrillic",
+        "cyrillic-ext",
+        "latin",
+        "latin-ext",
+        "math",
+        "symbols",
+        "vietnamese"
+      ],
+      "primaryScript": "",
+      "display": false
+    },
+    {
+      "family": "Playfair Display",
+      "category": "serif",
+      "variants": [
+        {
+          "weight": 400,
+          "style": "italic"
+        },
+        {
+          "weight": 400,
+          "style": "normal"
+        },
+        {
+          "weight": 500,
+          "style": "italic"
+        },
+        {
+          "weight": 500,
+          "style": "normal"
+        },
+        {
+          "weight": 600,
+          "style": "italic"
+        },
+        {
+          "weight": 600,
+          "style": "normal"
+        },
+        {
+          "weight": 700,
+          "style": "italic"
+        },
+        {
+          "weight": 700,
+          "style": "normal"
+        },
+        {
+          "weight": 800,
+          "style": "italic"
+        },
+        {
+          "weight": 800,
+          "style": "normal"
+        },
+        {
+          "weight": 900,
+          "style": "italic"
+        },
+        {
+          "weight": 900,
+          "style": "normal"
+        }
+      ],
+      "axes": [
+        {
+          "tag": "wght",
+          "min": 400,
+          "max": 900,
+          "default": 400
+        }
+      ],
+      "subsets": [
+        "cyrillic",
+        "latin",
+        "latin-ext",
+        "vietnamese"
+      ],
+      "primaryScript": "",
+      "display": true
+    },
+    {
+      "family": "Source Sans 3",
+      "category": "sans-serif",
+      "variants": [
+        {
+          "weight": 200,
+          "style": "italic"
+        },
+        {
+          "weight": 200,
+          "style": "normal"
+        },
+        {
+          "weight": 300,
+          "style": "italic"
+        },
+        {
+          "weight": 300,
+          "style": "normal"
+        },
+        {
+          "weight": 400,
+          "style": "italic"
+        },
+        {
+          "weight": 400,
+          "style": "normal"
+        },
+        {
+          "weight": 500,
+          "style": "italic"
+        },
+        {
+          "weight": 500,
+          "style": "normal"
+        },
+        {
+          "weight": 600,
+          "style": "italic"
+        },
+        {
+          "weight": 600,
+          "style": "normal"
+        },
+        {
+          "weight": 700,
+          "style": "italic"
+        },
+        {
+          "weight": 700,
+          "style": "normal"
+        },
+        {
+          "weight": 800,
+          "style": "italic"
+        },
+        {
+          "weight": 800,
+          "style": "normal"
+        },
+        {
+          "weight": 900,
+          "style": "italic"
+        },
+        {
+          "weight": 900,
+          "style": "normal"
+        }
+      ],
+      "axes": [
+        {
+          "tag": "wght",
+          "min": 200,
+          "max": 900,
+          "default": 400
+        }
+      ],
+      "subsets": [
+        "cyrillic",
+        "cyrillic-ext",
+        "greek",
+        "greek-ext",
+        "latin",
+        "latin-ext",
+        "vietnamese"
+      ],
+      "primaryScript": "",
+      "display": false
+    }
+  ]
+}

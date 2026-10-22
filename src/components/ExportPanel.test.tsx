@@ -2,8 +2,10 @@ import { render, screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { describe, expect, it, vi } from 'vitest'
 import { ExportPanel } from './ExportPanel'
-import { bodyFonts, headingFonts } from '../data/fonts'
+import { selected } from '../test/catalogFixture'
 import { createFontExport } from '../lib/fontExport'
+const headingFonts = [selected('Playfair Display')]
+const bodyFonts = { lato: selected('Lato', 400), dm: selected('DM Sans', 400) }
 
 describe('font export', () => {
   it('copies the selected pair as complete CSS and as a separate import', async () => {

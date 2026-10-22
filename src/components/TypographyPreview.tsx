@@ -1,12 +1,12 @@
 import { useLayoutEffect, useRef, useState, type CSSProperties } from 'react'
-import { fontStack, type FontFamily } from '../data/fonts'
+import { fontStack, type FontSelection } from '../data/fonts'
 import { Icon } from './Icon'
 import { StepHeading } from './StepHeading'
 
 export type PreviewMode = 'desktop' | 'mobile'
 
-function WebsiteSpecimen({ heading, body, mobile }: { heading: FontFamily; body: FontFamily; mobile: boolean }) {
-  const style = { '--specimen-heading': fontStack(heading), '--specimen-body': fontStack(body), '--specimen-weight': heading.headingWeight } as CSSProperties
+function WebsiteSpecimen({ heading, body, mobile }: { heading: FontSelection; body: FontSelection; mobile: boolean }) {
+  const style = { '--specimen-heading': fontStack(heading), '--specimen-body': fontStack(body), '--specimen-weight': heading.weight, '--specimen-style': heading.style, '--body-weight': body.weight, '--body-style': body.style } as CSSProperties
   return <div className={`website-specimen ${mobile ? 'is-mobile' : ''}`} style={style}>
     <div className="specimen-nav">
       <span className="specimen-wordmark">form &amp; field</span>
@@ -29,7 +29,7 @@ function WebsiteSpecimen({ heading, body, mobile }: { heading: FontFamily; body:
 }
 
 export function TypographyPreview({ heading, body, mode, onModeChange, fontStatus, onRetry }: {
-  heading: FontFamily; body: FontFamily; mode: PreviewMode; onModeChange: (mode: PreviewMode) => void
+  heading: FontSelection; body: FontSelection; mode: PreviewMode; onModeChange: (mode: PreviewMode) => void
   fontStatus: string; onRetry: () => void
 }) {
   const stage = useRef<HTMLDivElement>(null)
@@ -66,14 +66,15 @@ export function TypographyPreview({ heading, body, mode, onModeChange, fontStatu
         </div>
       </div>
       <div className="preview-metadata">
-        <span>H&nbsp; {heading.family} · {heading.headingWeight}</span><span>B&nbsp; {body.family} · 400</span>
+        <span>H&nbsp; {heading.family} · {heading.weight}{heading.style === 'italic' ? ' italic' : ''}</span><span>B&nbsp; {body.family} · {body.weight}{body.style === 'italic' ? ' italic' : ''}</span>
         <span className="preview-status">Aa&nbsp; Live typography preview</span>
       </div>
     </div>
     <div aria-live="polite" className="font-load-status">
       {fontStatus === 'error' && <p>Fonts couldn’t load. Showing system fallbacks. <button className="text-link" onClick={onRetry}>Retry fonts</button></p>}
-      {fontStatus === 'loading' && <span className="sr-only">Loading your fonts…</span>}
+      {fontStatus === 'loading' && <p>Loading your fonts…</p>}
       {fontStatus === 'ready' && <span className="sr-only">{heading.family} and {body.family} preview ready.</span>}
     </div>
+    {(!heading.subsets.includes('latin') || !body.subsets.includes('latin')) && <p className="text-[11px] leading-[18px] text-muted mt-2">This sample is in English. A selected font has no Latin subset, so some letters may use a system fallback. Check your own text before publishing.</p>}
   </section>
 }

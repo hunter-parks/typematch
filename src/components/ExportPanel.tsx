@@ -1,11 +1,11 @@
 import { useEffect, useRef, useState } from 'react'
-import type { FontFamily } from '../data/fonts'
+import type { FontSelection } from '../data/fonts'
 import { createFontExport } from '../lib/fontExport'
 import { Icon } from './Icon'
 
 type CopyKind = 'css' | 'import'
 
-export function ExportPanel({ heading, body }: { heading: FontFamily; body: FontFamily }) {
+export function ExportPanel({ heading, body }: { heading: FontSelection; body: FontSelection }) {
   const [showImport, setShowImport] = useState(false)
   const [copied, setCopied] = useState<CopyKind | null>(null)
   const [fallback, setFallback] = useState<{ kind: CopyKind; text: string } | null>(null)
