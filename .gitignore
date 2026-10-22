@@ -1,0 +1,19 @@
+node_modules/
+dist/
+.pnpm-store/
+test-results/
+playwright-report/
+*.local
+*.tsbuildinfo
+.DS_Store
+
+# Local environment, credentials, and deployment metadata
+.env
+.env.*
+.vercel/
+.npmrc
+*.pem
+*.key
+*.p12
+*.pfx
+*.log
