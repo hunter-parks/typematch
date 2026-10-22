@@ -1,0 +1,16 @@
+.git/
+.vercel/
+.env
+.env.*
+.npmrc
+node_modules/
+.pnpm-store/
+dist/
+test-results/
+playwright-report/
+*.tsbuildinfo
+*.pem
+*.key
+*.p12
+*.pfx
+*.log

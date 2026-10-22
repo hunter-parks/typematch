@@ -17,3 +17,6 @@ playwright-report/
 *.p12
 *.pfx
 *.log
+
+.vercel
+.env*
